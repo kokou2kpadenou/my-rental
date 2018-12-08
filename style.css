@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://www.unsplash.it/900);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-list {
+  list-style: none;
+}
+
+.btn-list__item {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-list__item:not(:last-of-type) {
+  margin-right: 80px;
+}
+
+.btn-list__item:hover {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 1),
+              0 0 20px rgba(255, 255, 255, 1),
+              0 0 30px rgba(255, 255, 255, 1),
+              0 0 0 75px rgba(255, 255, 255, 0.1),
+              0 0 0 60px rgba(255, 255, 255, 0.1),
+              0 0 0 45px rgba(255, 255, 255, 0.1),
+              0 0 0 30px rgba(255, 255, 255, 0.1),
+              0 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+
+a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
