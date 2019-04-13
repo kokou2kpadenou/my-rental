@@ -1,21 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>text</title>
-</head>
-<body>
-    <div class="container">
-        <ul class="btn-list">
-            <li class="btn-list__item"><a href="">1</a></li>
-            <li class="btn-list__item"><a href="">2</a></li>
-            <li class="btn-list__item"><a href="">3</a></li>
-            <li class="btn-list__item"><a href="">4</a></li>
-            <li class="btn-list__item"><a href="">5</a></li>
+    <meta name="description" content="Rental agence, gaithersbug, MD">
+    <title>Rental</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Mali:200,400" rel="stylesheet">
+    <link rel="stylesheet" href="./css/ionicons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <!-- Back To Top -->
+      <a class="back-to-top" id="back-to-top-id" href="#top">
+        <div class="back-to-top__content ion-chevron-up"></div>
+      </a>
+      <!--  -->
+      <header id="header">
+        <div class="row">
+          <div class="logo-box">
+            <a class="title-link" href="/">
+              <img src="images/logo.svg" alt="Rental logo" id="header-img">
+              <h1>Rental</h1>
+            </a>
+          </div>
+          <nav id="nav-bar">
+            <ul>
+              <li><a href="#feactures" class="nav-link">Features</a></li>
+              <li><a href="#how_it_looks" class="nav-link">How It Looks</a></li>
+              <li><a href="#pricing" class="nav-link">Pricing</a></li>
+              <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+            </ul>
+          </nav>
+          <!-- Hamburger Menu -->
+          <div class="bar_container" id="bar_container">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <!--  -->
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="zone">
+          <a class="title-link" href="/">
+            <img src="images/logo.svg" alt="Rental logo" class="zone__logo">
+          </a>
+          <h2 class="tilte2 tilte2--hero">There's House for You at Rental!</h2>
+          <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <input class="zone__email" type="email" name="email" id="email" placeholder="Enter your email address" value="" required aria-label="email">
+            <br>
+            <input class="zone__submit" type="submit" name="submit" id="submit" value="Get Started">
+          </form>
+        </div>
+      </section>
+
+      <section class="section-content" id="feactures">
+        <h2 class="tilte2 tilte2--others">Features</h2>
+        <ul class="gridbox">
+          <li class="box box--full">
+            <div class="box__icon">
+              <span class="ion-ios-home"></span>
+            </div>
+            <div class="">
+              <h3 class="box__title">Modern Houses</h3>
+              <p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing eli. Lorem ipsum dolor sit amet.</p>
+              <a href="#">more...</a>
+            </div>
+          </li>
+
+          <li class="box box--empty" id="box-empty1">
+            <!-- Empty box -->
+          </li>
+
+          <li class="box box--full">
+            <div class="box__icon">
+              <span class="ion-ios-people"></span>
+            </div>
+            <div class="">
+              <h3 class="box__title">Neighborhood</h3>
+              <p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing eli. Lorem ipsum dolor sit amet.</p>
+              <a href="#">more...</a>
+            </div>
+          </li>
+
+          <li class="box box--empty" id="box-empty2">
+            <!-- Empty box -->
+          </li>
+
+          <li class="box box--empty" id="box-empty3">
+            <!-- Empty box -->
+          </li>
+
+          <li class="box box--full">
+            <div class="box__icon">
+              <span class="ion-android-subway"></span>
+            </div>
+            <div class="">
+              <h3 class="box__title">Commute</h3>
+              <p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing eli. Lorem ipsum dolor sit amet.</p>
+              <a href="#">more...</a>
+            </div>
+          </li>
+
+          <li class="box box--empty" id="box-empty4">
+            <!-- Empty box -->
+          </li>
+
+          <li class="box box--full">
+            <div class="box__icon">
+              <span class="ion-flag"></span>
+            </div>
+            <div class="">
+              <h3 class="box__title">Amenities</h3>
+              <p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing eli. Lorem ipsum dolor sit amet.</p>
+              <a href="#">more...</a>
+            </div>
+          </li>
+
+
+
         </ul>
+      </section>
+
+      <section class="section-content" id="how_it_looks">
+        <h2 class="tilte2 tilte2--others">How It Looks</h2>
+          <div class="video-box">
+            <iframe id="video" title="How It Works" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" allowfullscreen></iframe>
+          </div>
+          <p class="video-desc">The above video is not related to the content of the website. Since I did not find any video related, I just kept this one to pass the user story test. Thank you for the understanding.</p>
+      </section>
+
+      <section class="section-content" id="pricing">
+        <h2 class="tilte2 tilte2--others">Pricing</h2>
+        <div class="card-box">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__tilte-zone" id="card-title-zone1">
+                <h3 class="card__title">Condo</h3>
+              </div>
+              <ul>
+                <li class="card__elt">2 bedrooms</li>
+                <li class="card__elt">1 bathrooms</li>
+                <li class="card__elt">0 basements</li>
+                <li class="card__elt">0 parkings</li>
+              </ul>
+            </div>
+            <div class="card__side card__side--back">
+              <div class="card__price-zone">
+                <p class="card__price"><span class="sup">$</span>600<span class="sup">.00</span><span class="sub">/mth</span></p>
+                <ul class="rating">
+                  <li class="ion-android-star"></li>
+                  <li class="ion-android-star"></li>
+                  <li class="ion-android-star"></li>
+                  <li class="ion-android-star-half"></li>
+                  <li class="ion-android-star-outline"></li>
+                </ul>
+              </div>
+              <div class="card__button-zone">
+                <a class="card__button" href="#">Tour</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__tilte-zone" id="card-title-zone2">
+                <h3 class="card__title">TownHouse</h3>
+              </div>
+              <ul>
+                <li class="card__elt">3 bedrooms</li>
+                <li class="card__elt">2 bathrooms</li>
+                <li class="card__elt">1 basements</li>
+                <li class="card__elt">1 parkings</li>
+              </ul>
+            </div>
+            <div class="card__side card__side--back">
+              <div class="card__price-zone">
+                <p class="card__price"><span class="sup">$</span>950<span class="sup">.00</span><span class="sub">/mth</span></p>
+                <ul class="rating">
+                  <li class="ion-android-star"></li>
+                  <li class="ion-android-star"></li>
+                  <li class="ion-android-star"></li>
+                  <li class="ion-android-star-outline"></li>
+                  <li class="ion-android-star-outline"></li>
+                </ul>
+              </div>
+              <div class="card__button-zone">
+                <a class="card__button" href="#">Tour</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__tilte-zone" id="card-title-zone3">
+                <h3 class="card__title">Single</h3>
+              </div>
+              <ul>
+                <li class="card__elt">4 bedrooms</li>
+                <li class="card__elt">3 bathrooms</li>
+                <li class="card__elt">1 basements</li>
+                <li class="card__elt">3 parkings</li>
+              </ul>
+            </div>
+            <div class="card__side card__side--back">
+              <div class="card__price-zone">
+                <p class="card__price"><span class="sup">$</span>1,350<span class="sup">.00</span><span class="sub">/mth</span></p>
+                <ul class="rating">
+                  <li class="ion-android-star"></li>
+                  <li class="ion-android-star"></li>
+                  <li class="ion-android-star"></li>
+                  <li class="ion-android-star"></li>
+                  <li class="ion-android-star-outline"></li>
+                </ul>
+              </div>
+              <div class="card__button-zone">
+                <a class="card__button" href="#">Tour</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-content" id="testimonials">
+        <h2 class="tilte2 tilte2--others">testimonials</h2>
+        <div class="test-box">
+          <div class="testimonial">
+            <cite class="testimonial__img"><img src="images/pic1.jpg" alt="Client photo"><br>--Jael Libra <span class="ion-quote"></span></cite>
+            <blockquote class="testimonial__msg">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam commodi error odio delectus dignissimos libero distinctio veniam quasi at sequi neque expedita quae accusantium, fugit aliquam veritatis, quis ex quia rerum laboriosam quidem earum quas in. Repellat!</p>
+            </blockquote>
+          </div>
+          <div class="testimonial">
+            <cite class="testimonial__img"><img src="images/pic2.jpg" alt="Client photo"><br>--Riri Kpatcha <span class="ion-quote"></span></cite>
+            <blockquote class="testimonial__msg">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam commodi error odio delectus dignissimos libero distinctio veniam quasi at sequi neque expedita quae accusantium, fugit aliquam veritatis, quis ex quia rerum laboriosam quidem earum quas in. Repellat!</p>
+            </blockquote>
+          </div>
+          <div class="testimonial">
+            <cite class="testimonial__img"><img src="images/pic3.jpg" alt="Client photo"><br>--Ayoko Manavi <span class="ion-quote"></span></cite>
+            <blockquote class="testimonial__msg">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam commodi error odio delectus dignissimos libero distinctio veniam quasi at sequi neque expedita quae accusantium, fugit aliquam veritatis, quis ex quia rerum laboriosam quidem earum quas in. Repellat!</p>
+            </blockquote>
+          </div>
+          <div class="testimonial">
+            <cite class="testimonial__img"><img src="images/pic4.jpg" alt="Client photo"><br>--Akpevi Avoulete <span class="ion-quote"></span></cite>
+            <blockquote class="testimonial__msg">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam commodi error odio delectus dignissimos libero distinctio veniam quasi at sequi neque expedita quae accusantium, fugit aliquam veritatis, quis ex quia rerum laboriosam quidem earum quas in. Repellat!</p>
+            </blockquote>
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <footer class="foot">
+        <div class="foot__menu">
+          <ul class="menu-social">
+            <li><a class="menu-social__link rss" href="#" aria-label="rss"><span class="ion-social-rss"></span></a></li>
+            <li><a class="menu-social__link twitter" href="#" aria-label="twitter"><span class="ion-social-twitter"></span></a></li>
+            <li><a class="menu-social__link facebook" href="#" aria-label="facebook"><span class="ion-social-facebook"></span></a></li>
+            <li><a class="menu-social__link google-plus" href="#" aria-label="googleplus"><span class="ion-social-googleplus"></span></a></li>
+          </ul>
+          <ul class="menu-others">
+            <li><a class="menu-others__link" href="#">Privacy</a></li>
+            <li><a class="menu-others__link" href="#">Terms</a></li>
+            <li><a class="menu-others__link" href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="foot__copy">
+          <p>Copyright 2018, Rental</p>
+          <p>This web site is not real, it is just a makeup, Thanks.</p>
+          <p>All the photos are from <a href="https://unsplash.com/" target="_blank" rel="noreferrer noopener nofollow">unsplash<span class="ion-android-open"></span></a>, big credit to their authors.</p>
+        </div>
+      </footer>
+
+
     </div>
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>
