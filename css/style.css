@@ -708,9 +708,10 @@ h1 {
 /* --------------------------------------------------------------------- */
 .bar_container {
   display: none;
-  position: fixed;
+  position: relative;
+  /* position: fixed;
   right: 2rem;
-  top: 2rem;
+  top: 2rem; */
   cursor: pointer;
   z-index: 3;
 }
@@ -820,6 +821,10 @@ h1 {
 }
 
 @media screen and (max-width: 549px) {
+  html {
+    font-size: 50%;
+  }
+
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero_800.jpg);
   }
