@@ -219,7 +219,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   /* grid-template-rows: 1fr 1fr; */
-  grid-gap: 1px;
+  grid-gap: 3px;
   max-width: 90rem;
   margin: 0px auto;
   list-style: none;
@@ -564,6 +564,9 @@ h1 {
   padding: 3rem 2rem;
   margin: 0px auto;
 }
+
+
+
 .menu-social, .menu-others {
   list-style: none;
   font-size: 2rem;
@@ -576,7 +579,7 @@ h1 {
 
 .menu-social li {
   display: inline-block;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 .menu-social li:not(:last-of-type) {
@@ -793,9 +796,15 @@ h1 {
 
 @media screen and (max-width: 800px) {
 
+/* intro */
+  .zone {
+    width: 80%;
+  }
+
 /* feacture */
   .gridbox {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
     max-width: 60rem;
   }
 
@@ -818,11 +827,15 @@ h1 {
     flex-direction: column;
   }
 
+  .testimonial {
+    margin: 0 4rem;
+  }
+
 }
 
 @media screen and (max-width: 549px) {
   html {
-    font-size: 50%;
+    font-size: 45%;
   }
 
   .hero {
